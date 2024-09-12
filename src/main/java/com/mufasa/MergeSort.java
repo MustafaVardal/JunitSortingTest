@@ -23,9 +23,11 @@ public class MergeSort {
 
         int[] L = new int[n1 + 1];
         int[] R = new int[n2 + 1];
+
         for (int i = 0; i < n1; i++) {
             L[i] = a[p + i];
         }
+
         for (int j = 0; j < n2; j++) {
             R[j] = a[q + 1 + j];
         }
