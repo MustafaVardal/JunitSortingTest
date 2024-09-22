@@ -1,27 +1,25 @@
-import com.mufasa.InsertionSort;
+import com.mufasa.QuickSort;
 import org.junit.Test;
 
 
-public class InsertionSortTest {
-
+public class QuickSortTest {
 
     @Test
-    public void testInsertionSort1000Elements(){
+    public void testQuickSort1000Elements(){
         int[] array = SortTestUtil.generateRandomIntArray(1000);
 
-        InsertionSort.sort(array);
+        QuickSort.sort(array);
 
         SortTestUtil.verifyArrayIsInNondecreasingOrder(array);
     }
 
 
     @Test
-    public void testInsertionSort10000Elements(){
+    public void testQuickSort10000Elements(){
         int[] array = SortTestUtil.generateRandomIntArray(10000);
 
-        InsertionSort.sort(array);
+        QuickSort.sort(array);
 
         SortTestUtil.verifyArrayIsInNondecreasingOrder(array);
     }
-
 }
